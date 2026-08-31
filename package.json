@@ -15,12 +15,12 @@
   "private": false,
   "homepage": "https://Franeldramatico.github.io/Luna-y-Sol/",
   "dependencies": {
-    "@angular/cdk": "^21.0.0",
+    "@angular/cdk": "^21.2.14",
     "@angular/common": "^21.0.0",
     "@angular/compiler": "^21.0.0",
-    "@angular/core": "^21.0.0",
+    "@angular/core": "^21.2.22",
     "@angular/forms": "^21.0.0",
-    "@angular/material": "^21.0.0",
+    "@angular/material": "^21.2.14",
     "@angular/platform-browser": "^21.0.0",
     "@angular/platform-server": "^21.0.0",
     "@angular/router": "^21.0.0",
@@ -37,7 +37,10 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "angular-cli-ghpages": "^3.1.0",
     "angular-eslint": "21.1.0",
+    "browserslist": "^4.28.8",
+    "caniuse-lite": "^1.0.30001810",
     "cross-env": "^10.1.0",
     "eslint": "^9.39.1",
     "jsdom": "^27.0.0",
@@ -45,7 +48,6 @@
     "tailwindcss": "^4.1.12",
     "typescript": "~5.9.2",
     "typescript-eslint": "8.47.0",
-    "vitest": "^4.0.0",
-    "angular-cli-ghpages": "^3.1.0"
+    "vitest": "^4.0.0"
   }
 }
