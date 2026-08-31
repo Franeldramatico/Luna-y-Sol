@@ -1,0 +1,7 @@
+{
+  "name": "Aranxita — Mi Cielo Encontró Su Eclipse",
+  "description": "Una experiencia cinematográfica y carta de amor interactiva inspirada en un eclipse solar para Aranxita.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

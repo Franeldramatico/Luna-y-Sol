@@ -1,0 +1,20 @@
+<!-- 1. Starfield Particle Background Canvas -->
+<app-celestial-canvas
+  [burstTrigger]="burstCounter()"
+  [heartRainTrigger]="heartRainCounter()"
+/>
+
+<!-- 2. Cosmic Ambient Backdrops & Atmospheric Depth -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,_rgba(67,24,120,0.18)_0%,_transparent_75%)]"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_80%_15%,_rgba(251,191,36,0.06)_0%,_transparent_60%)]"></div>
+  <div class="absolute inset-0 cosmic-grid opacity-35"></div>
+</div>
+
+<!-- 3. Main Fullscreen Celestial Eclipse Stage (Zero-scroll, pure visual & gesture driven) -->
+<main class="fixed inset-0 w-full h-[100dvh] overflow-hidden z-10 text-[#F5EFEB]">
+  <app-solar-eclipse
+    (celestialBurst)="onCelestialBurst()"
+    (heartRain)="onHeartRain()"
+  />
+</main>

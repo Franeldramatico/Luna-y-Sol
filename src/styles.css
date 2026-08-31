@@ -1,0 +1,100 @@
+/* Global styles and custom typography - Ultra-Luxe Celestial Void Theme */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #020106;
+    color: #F5EFEB;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-signature {
+  font-family: 'Alex Brush', 'Pinyon Script', cursive;
+}
+
+.font-script {
+  font-family: 'Pinyon Script', 'Alex Brush', cursive;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Glassmorphism subtle luxury */
+.luxe-glass {
+  background: rgba(10, 7, 18, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(251, 191, 36, 0.18);
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.luxe-glass-active {
+  background: rgba(26, 18, 42, 0.85);
+  border-color: rgba(251, 191, 36, 0.6);
+  box-shadow: 0 0 25px rgba(251, 191, 36, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+/* Ethereal Glow Animations */
+@keyframes ethereal-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-ethereal-in {
+  animation: ethereal-fade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Cosmic Ambient Grid */
+.cosmic-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+@keyframes heart-shower {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.6) rotate(-15deg);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0px) scale(1.1) rotate(5deg);
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(120px) scale(0.7) rotate(25deg);
+  }
+}
+
+.animate-heart-shower {
+  animation: heart-shower 3.2s ease-in-out forwards;
+}
